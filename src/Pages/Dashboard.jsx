@@ -14,7 +14,7 @@ import Footer from '../Component/Footer';
 function Dashboard() {
   return (
     <>
-    <section className='body-font font-poppins w-screen'>
+    <section className='body-font font-poppins w-screen sm:overflow-x-hidden'>
         <Navbar />
         <div className='flex'>
             <div className='absolute -z-20'>
@@ -40,19 +40,19 @@ function Dashboard() {
                 <img src={backgroundFifth} className='w-[700px] h-auto' alt="" />
             </div>
             <div className="w-full text-white">
-                <div className='w-full h-[600px] bg-primary'>
-                    <div className='grid grid-cols-2 px-24 py-12 w-full h-full'>
+                <div className='w-full h-[500px] lg:h-[600px] bg-primary'>
+                    <div className='lg:flex lg:justify-between lg:px-24 px-12 py-12 w-full h-full'>
                         <div className=''>
-                            <p className='text-8xl font-bold text-white'>Start Your <br />Social Media </p>
-                            <div className='w-[500px]'>
+                            <p className='text-5xl lg:text-8xl font-bold text-white'>Start Your <br />Social Media </p>
+                            <div className='lg:w-[500px]'>
                                 <p className='text-lg pt-8 text-white-500'>Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.</p>
                             </div>
                             <button className='mt-10 bg-primary border-1 border-white px-12 py-4'>
                                 <p className='text-lg font-semibold'>Get Started</p>
                             </button>
                         </div>
-                        <div className='flex justify-center'>
-                            <img className='' src={jumbotron} alt="" />
+                        <div className='hidden lg:flex lg:justify-center'>
+                            <img className='pr-48' src={jumbotron} alt="" />
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ function Dashboard() {
                 <Card />
             </div>
             <div className='flex justify-center mt-32'>
-                <button className='btn bg-white border-[3px] border-primary text-primary text-lg font-bold px-16 py-4 hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>See All</button>
+                <button className='btn bg-transparent border-[3px] border-primary text-primary text-lg font-bold px-16 py-4 hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>See All</button>
             </div>
         </div> 
         <div className='h-[980px] text-black'>
@@ -89,22 +89,24 @@ function Dashboard() {
                 <CardSMM />
             </div>
             <div className='flex justify-center mt-32'>
-                <button className='btn bg-white border-[3px] border-primary text-primary text-lg font-bold px-16 py-4 hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>See All</button>
+                <button className='btn bg-transparent border-[3px] border-primary text-primary text-lg font-bold px-16 py-4 hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>See All</button>
             </div>
         </div>
         <div className='h-[490px] mt-28 text-black'>
-            <div className='w-full flex px-32'>
-                <img src="https://global-uploads.webflow.com/5f0082d019150187c1bdb9ca/63905f1323b53092e08df14e_company%20(1).webp" alt="" />
-                <div className='grid grid-row-4 ml-12 h-18 w-full'>
-                    <div className=''>
+            <div className='w-screen flex lg:px-32 lg:justify-start'>
+                <img src="https://global-uploads.webflow.com/5f0082d019150187c1bdb9ca/63905f1323b53092e08df14e_company%20(1).webp" alt="" className='lg:flex hidden' />
+                <div className='w-screen lg:ml-12'>
+                    <div className='flex justify-center lg:justify-start'>
                         <p className='text-4xl font-medium'>Why SOCIOBOX?</p>
                     </div>
-                    <div className='row-span-3'>
-                        <div className='w-[800px]'>
-                            <p className='text-lg text-gray-500'>Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque. Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.</p>
-                        </div>
+                    <div className='w-full flex justify-center px-12 lg:px-0 lg:w-[800px] lg:justify-start'>
+                        <p className='text-lg text-gray-500'>Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque. Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.</p>
                     </div>
-                    <button className='btn w-44 bg-white border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>Contact Us</button>
+                    <div className='flex justify-center lg:justify-start'>
+                        <button className='btn w-44 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>
+                            Contact Us
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
