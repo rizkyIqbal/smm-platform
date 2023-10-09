@@ -14,7 +14,7 @@ function Register() {
             <div className='absolute top-32 left-0'>
                 <img src={backgroundSix} className='w-[620px] h-auto' alt="" />
             </div>
-            <div className='absolute bottom-[-388px] right-0'>
+            <div className='absolute bottom-[-405px] right-0'>
                 <img src={backgroundSeven} className='w-[700px] h-auto' alt="" />   
             </div>
             </div>
