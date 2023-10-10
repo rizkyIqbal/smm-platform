@@ -10,12 +10,12 @@ function Footer() {
                 <div className="mb-6 md:mb-0">
                     <a href="#" className="flex items-center">
                         <img src={logo} className="mr-3 h-24" alt="Sociobox Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SMM Platform</span>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-white">SMM Platform</span>
                     </a>
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-2">
                     <div>
-                        <h2 className="mb-6 text-md font-semibold text-gray-900 dark:text-white">
+                        <h2 className="mb-6 text-md font-semibold text-gray-900 dark:text-white text-white">
                             Company
                         </h2>
                         <ul className="text-gray-600 dark:text-gray-400">
@@ -28,7 +28,7 @@ function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-md font-semibold text-gray-900 dark:text-white">
+                        <h2 className="mb-6 text-md font-semibold text-gray-900 dark:text-white text-white">
                             Get In Touch
                         </h2>
                         <ul className="text-gray-600 dark:text-gray-400">
