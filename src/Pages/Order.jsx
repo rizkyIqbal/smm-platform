@@ -16,7 +16,7 @@ function Order() {
     <>
     <section className='body-font font-poppins w-screen sm:overflow-x-hidden'>
         <Navbar />
-            Test commit
+            Test commit 2
         <Footer />
     </section>
     </>
