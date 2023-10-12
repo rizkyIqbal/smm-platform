@@ -47,7 +47,7 @@ function Dashboard() {
                             <div className='lg:w-[500px]'>
                                 <p className='text-lg pt-8 text-white-500'>Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.</p>
                             </div>
-                            <button className='mt-10 bg-primary border-1 border-white px-12 py-4'>
+                            <button className='mt-10 bg-primary border-1 border-white px-12 py-4 hover:border-none hover:bg-white hover:text-primary'>
                                 <p className='text-lg font-semibold'>Get Started</p>
                             </button>
                         </div>
