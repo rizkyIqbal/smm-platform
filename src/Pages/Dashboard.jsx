@@ -44,8 +44,8 @@ function Dashboard() {
                     <div className='lg:flex lg:justify-between lg:px-24 px-12 py-12 w-full h-full'>
                         <div className=''>
                             <p className='text-5xl lg:text-8xl font-bold text-white'>Start Your <br />Social Media </p>
-                            <div className='lg:w-[500px]'>
-                                <p className='text-lg pt-8 text-white-500'>Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.</p>
+                            <div className='lg:w-[580px]'>
+                                <p className='text-lg pt-8 text-white-500'>Welcome to SocioBox  Optimizing MSME Digital Marketing. We are here to support the growth and success of Micro, Small and Medium Enterprises (MSMEs) businesses through effective digital marketing strategies.</p>
                             </div>
                             <button className='mt-10 bg-primary border-1 border-white px-12 py-4 hover:border-none hover:bg-white hover:text-primary'>
                                 <p className='text-lg font-semibold'>Get Started</p>
@@ -100,7 +100,7 @@ function Dashboard() {
                         <p className='text-4xl font-medium'>Why SOCIOBOX?</p>
                     </div>
                     <div className='w-full flex justify-center px-12 lg:px-0 lg:w-[800px] lg:justify-start'>
-                        <p className='text-lg text-gray-500'>Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque. Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.Lorem ipsum dolor sit amet consectetur. Pellentesque orci pellentesque at pharetra. Lorem ipsum dolor sit amet consectetur. Pellentesque.</p>
+                        <p className='mt-4 mb-4 text-lg text-gray-500'>Social media provides a direct and immediate channel to engage with your target audience. It allows you to connect with your customers, answer their questions, and respond to their feedback in real-time, fostering a sense of community and trust. Social media is a powerful tool for sharing content. It allows you to distribute blog posts, videos, infographics, and other valuable content to a wider audience, increasing the chances of your content going viral. Your competitors are likely already using social media for their marketing efforts. By managing your social media effectively, you can gain a competitive edge in your industry.</p>
                     </div>
                     <div className='flex justify-center lg:justify-start'>
                         <button className='btn w-44 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>
