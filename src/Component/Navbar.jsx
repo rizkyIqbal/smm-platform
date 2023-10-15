@@ -23,20 +23,20 @@ function Navbar() {
 
                   <Popover.Panel className="absolute z-10">
                     <div className="grid grid-cols-2">
-                      <Link href="#" className="text-white font-medium hover:text-white">Home</Link>
-                      <Link href="#" className="text-white font-medium hover:text-white">Order</Link>
-                      <Link href="#" className="text-white font-medium hover:text-white">About Us</Link>
-                      <Link href="#" className="text-white font-medium hover:text-white">Contact</Link>
+                      <Link to="/" className="text-white font-medium hover:text-white">Home</Link>
+                      <Link to="/order" className="text-white font-medium hover:text-white">Order</Link>
+                      <Link to="#" className="text-white font-medium hover:text-white">About Us</Link>
+                      <Link to="#" className="text-white font-medium hover:text-white">Contact</Link>
                     </div>
 
                     <img src="/solutions.jpg" alt="" />
                   </Popover.Panel>
                 </Popover>
                 <div className="hidden md:flex space-x-4 col-span-2 py-12">
-                    <Link href="#" className="text-white font-medium hover:text-white">Home</Link>
-                    <Link href="#" className="text-white font-medium hover:text-white">Order</Link>
-                    <Link href="#" className="text-white font-medium hover:text-white">About Us</Link>
-                    <Link href="#" className="text-white font-medium hover:text-white">Contact</Link>
+                    <Link to="/" className="text-white font-medium hover:text-white">Home</Link>
+                    <Link to="/order" className="text-white font-medium hover:text-white">Order</Link>
+                    <Link to="#" className="text-white font-medium hover:text-white">About Us</Link>
+                    <Link to="#" className="text-white font-medium hover:text-white">Contact</Link>
                 </div>
             </div>
         </div>
