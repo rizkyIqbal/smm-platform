@@ -7,6 +7,7 @@ import Faq from './Pages/Faq'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Order from './Pages/Order'
+import AboutUs from './Pages/AboutUs'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/seller" element={<SellerList/>} />
       <Route path="/faq" element={<Faq/>} />
+      <Route path="/about" element={<AboutUs/>} />
     </Routes>
   )
 }
