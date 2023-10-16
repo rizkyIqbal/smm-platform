@@ -36,23 +36,23 @@ function SellerList() {
 
                 <div className='p-4 absolute top-[102px] w-80 border border-gray-500 rounded-none'>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Food</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Fashion</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Kitchenware</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Sport</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Others</label>
                     </div>
                     <div className='flex p-3 -ml-3 items-center justify-center w-80'>
@@ -65,35 +65,35 @@ function SellerList() {
 
                 <div className='p-4 absolute top-[436px] w-80 border border-gray-500 rounded-none'>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">IG Nano (5k-15k)</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">IG Micro (50k-200k)</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">IG Macro (300k-500k)</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">IG Mega (500k++)</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Tiktok Nano (5k-15k)</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Tiktok Micro (50k-200k)</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Tiktok Macro (300k-500k)</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Tiktok Mega (500k++)</label>
                     </div>
                     <div className='flex p-3 -ml-3 items-center justify-center w-80'>
@@ -105,11 +105,11 @@ function SellerList() {
                 </div>
                 <div className='p-4 absolute top-[915px] w-80 border border-gray-500 rounded-b-xl'>
                 <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Laki-laki</label>
                     </div>
                     <div class="flex items-center mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"/>
+                        <input id="default-checkbox" type="checkbox" value="" class="w-8 h-8 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500"/>
                         <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Perempuan</label>
                     </div>
                 </div>
