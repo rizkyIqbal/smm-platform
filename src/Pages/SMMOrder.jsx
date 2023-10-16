@@ -7,6 +7,7 @@ import firstCircle from '../assets/img/orderSMM/firstCircle.png'
 import secondCircle from '../assets/img/orderSMM/secondCircle.png'
 import thirdCircle from '../assets/img/orderSMM/thirdCircle.png'
 import Footer from '../Component/Footer';
+import { Link } from "react-router-dom";
 
 function SMMOrder() {
   return (
@@ -27,9 +28,11 @@ function SMMOrder() {
                 <div className='mr-96'>
                     <p className='text-3xl font-medium'>Without Any Hassle</p>
                     <p className='text-xl mt-2'>Leave your social media content to us, so you can focus on your business</p>
-                    <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:text-white'>
-                    Start Now
-                    </button>
+                    <Link to="/seller">
+                        <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:text-white'>
+                            Start Now
+                        </button>
+                    </Link>
                 </div>
                 <img src={sectionInfluencer} className='w-[620px] h-auto' alt="" />
             </div>
@@ -38,9 +41,11 @@ function SMMOrder() {
                 <div className='ml-12'>
                   <p className='text-3xl font-medium'>Increase Sales</p>
                   <p className='text-xl mt-2'>Active social media will be recognized by more people and more sales</p>
-                  <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>
-                    Start Now
-                  </button>
+                  <Link to="/seller">
+                    <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>
+                        Start Now
+                    </button>
+                  </Link>
                 </div>  
             </div>
             <div className='flex items-center justify-between mt-24'>
@@ -48,9 +53,11 @@ function SMMOrder() {
                     <p className='text-3xl font-medium'>100% Money Back Guarantees</p>
                     <p className='text-xl mt-2'>No impact?</p>
                     <p className='text-xl mt-2'>We refund our service free, no strings attached</p>
-                    <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:text-white'>
-                    Start Now
-                    </button>
+                    <Link to="/seller">
+                        <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:text-white'>
+                        Start Now
+                        </button>
+                    </Link>
                 </div>
                 <img src={sectionInfluencer} className='w-[620px] h-auto' alt="" />
             </div>
