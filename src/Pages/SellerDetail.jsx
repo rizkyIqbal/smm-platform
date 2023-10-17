@@ -12,6 +12,11 @@ import { BsPerson } from 'react-icons/bs';
 import { IoPricetagOutline } from 'react-icons/io5';
 import {BsInstagram} from 'react-icons/bs'
 import {BiLogoTiktok} from 'react-icons/bi'
+import {FiClipboard} from 'react-icons/fi'
+import {BsFillCartCheckFill} from 'react-icons/bs'
+import {TiInputChecked} from 'react-icons/ti'
+import {RxLapTimer} from 'react-icons/rx'
+import {FaRegHandshake} from 'react-icons/fa'
 
 function SellerDetail () {
     return (
@@ -87,20 +92,46 @@ function SellerDetail () {
                 <div className='w-[440px] h-[138px] absolute top-[885px] left-[900px] border border-gray-400'>
                     <p className='text-[22px] font-bold text-black ml-4'>Food</p>
                     <p className='text-[22px] text-black ml-4'>Rp. 350.000 - 500.000</p>
-                    <p className='text-[22px] text-black ml-4'>Preparation (1-2 Days)</p>
-                    <p className='text-[22px] text-black ml-4'>5 Orders | 2 Completed | 3 Process</p>
+                    <div className='flex ml-4 items-center'>
+                        <FiClipboard color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">1-2 Days</p>
+                    </div>
+                    <div className='flex ml-4 items-center'>
+                        <BsFillCartCheckFill color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">5 |</p>
+                        <TiInputChecked color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">2 |</p>
+                        <RxLapTimer color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">3</p>
+                    </div>
                 </div>
                 <div className='w-[440px] h-[138px] absolute top-[1040px] left-[900px] border border-gray-400'>
                     <p className='text-[22px] font-bold text-black ml-4'>Fashion</p>
                     <p className='text-[22px] text-black ml-4'>Rp. 400.000 - 700.000</p>
-                    <p className='text-[22px] text-black ml-4'>Preparation (1-2 Days)</p>
-                    <p className='text-[22px] text-black ml-4'>10 Orders | 5 Completed | 5 Process</p>
+                    <div className='flex ml-4 items-center'>
+                        <FiClipboard color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">1-2 Days</p>
+                    </div>
+                    <div className='flex ml-4 items-center'>
+                        <BsFillCartCheckFill color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">10 |</p>
+                        <TiInputChecked color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">5 |</p>
+                        <RxLapTimer color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">5</p>
+                    </div>
                 </div>
                 <div className='w-[440px] h-[138px] absolute top-[1200px] left-[900px] border border-gray-400'>
                     <p className='text-[22px] font-bold text-black ml-4'>Handicraft</p>
                     <p className='text-[22px] text-black ml-4'>Rp. 350.000 - 450.000</p>
-                    <p className='text-[22px] text-black ml-4'>Preparation (3 Days)</p>
-                    <p className='text-[22px] text-black ml-4'>0 Deals</p>
+                    <div className='flex ml-4 items-center'>
+                        <FiClipboard color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">3 Days</p>
+                    </div>
+                    <div className='flex ml-4 items-center'>
+                        <FaRegHandshake color='black' fontSize="24px" />
+                        <p className="inline-flex text-[22px] text-black ml-2">0</p>
+                    </div>
                 </div>
             </div>
             
