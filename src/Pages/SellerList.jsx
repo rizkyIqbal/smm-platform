@@ -18,7 +18,10 @@ const sellers = [
         highestPrice : "550.000",
         rating: "3.9",
         estTime: 2,
-        queuePerson: 4
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "/src/assets/img/profile/profile1.png"
     },
     {
         name: "Budi Doremi",
@@ -27,7 +30,10 @@ const sellers = [
         highestPrice : "1.000.000",
         rating: "4.2",
         estTime: 1,
-        queuePerson: 2
+        queuePerson: 2,
+        igFollower : "15k",
+        tiktokFollower: "18K",
+        photo: "/src/assets/img/profile/profile4.jpg"
     },
     {
         name: "Muhammad Billy",
@@ -36,7 +42,10 @@ const sellers = [
         highestPrice : "550.000",
         rating: "2.7",
         estTime: 3,
-        queuePerson: 12
+        queuePerson: 12,
+        igFollower : "7k",
+        tiktokFollower: "11K",
+        photo: "/src/assets/img/profile/profile5.jpg"
     },
     {
         name: "Marcell",
@@ -45,7 +54,10 @@ const sellers = [
         highestPrice : "1.000.000",
         rating: "4.1",
         estTime: 1,
-        queuePerson: 2
+        queuePerson: 2,
+        igFollower : "14k",
+        tiktokFollower: "17K",
+        photo: "/src/assets/img/profile/profile6.jpg"
     },
     {
         name: "Rosianna Rizki",
@@ -54,43 +66,58 @@ const sellers = [
         highestPrice : "550.000",
         rating: "3.2",
         estTime: 5,
-        queuePerson: 17
+        queuePerson: 17,
+        igFollower : "6k",
+        tiktokFollower: "7K",
+        photo: "/src/assets/img/profile/profile3.jpg"
     },
     {
-        name: "Luhut",
+        name: "Mamat",
         location: "Malang, Jawa TImur",
         lowerPrice : "100.000",
         highestPrice : "1.000.000",
         rating: "4.1",
         estTime: 1,
-        queuePerson: 1
+        queuePerson: 1,
+        igFollower : "17k",
+        tiktokFollower: "20K",
+        photo: "/src/assets/img/profile/profile7.jpg"
     },
     {
-        name: "Sukirman",
+        name: "Bella",
         location: "Semarang, Jawa Tengah",
         lowerPrice : "350.000",
         highestPrice : "550.000",
         rating: "4.9",
         estTime: 2,
-        queuePerson: 4
+        queuePerson: 4,
+        igFollower : "14k",
+        tiktokFollower: "16K",
+        photo: "/src/assets/img/profile/profile8.jpg"
     },
     {
         name: "Abu Rizal",
-        location: "Depok, Jawa Barat",
+        location: "Purwokerto, Jawa Tengah",
         lowerPrice : "350.000",
         highestPrice : "550.000",
         rating: "4.1",
         estTime: 6,
-        queuePerson: 23
+        queuePerson: 23,
+        igFollower : "10k",
+        tiktokFollower: "12K",
+        photo: "/src/assets/img/profile/profile9.jpg"
     },
     {
         name: "Jody Yuantoro",
-        location: "Malang, Jawa TImur",
+        location: "Depok, Jawa Barat",
         lowerPrice : "100.000",
         highestPrice : "1.000.000",
         rating: "3.9",
         estTime: 2,
-        queuePerson: 4
+        queuePerson: 4,
+        igFollower : "22k",
+        tiktokFollower: "26K",
+        photo: "/src/assets/img/profile/profile10.jpg"
     },
 ];
 
@@ -505,7 +532,7 @@ function SellerList() {
                     {sellers.map((seller) => (
                         <div className="flex justify-center w-[288px] bg-white border border-gray-400 rounded-lg shadow">
                             <div className="flex flex-col items-center pb-10 mt-8 -mb-4">
-                                <img className="w-36 h-36 mb-3 rounded-full shadow-lg" src="/src/assets/img/profile/profile1.png" alt="Juliana img"/>
+                                <img className="w-36 h-36 mb-3 rounded-full shadow-lg" src={seller.photo} alt=""/>
                                 <h5 className=" text-[16px] font-medium text-gray-900">{seller.name}</h5>
                                 <div className="flex">
                                 <IoLocationSharp color='grey' fontSize="16px"/>
@@ -526,9 +553,9 @@ function SellerList() {
                                 </div>
                                 <div className="flex space-x-2 md:mt-2 justify-center ">
                                     <BsInstagram color='gray' fontSize="24px" />
-                                    <a href="https://www.instagram.com/" className="inline-flex items-center text-xs font-medium text-center text-black hover:text-black">10k</a>
+                                    <a href="https://www.instagram.com/" className="inline-flex items-center text-xs font-medium text-center text-black hover:text-black">{seller.igFollower}</a>
                                     <BiLogoTiktok color='gray' fontSize="24px" />
-                                    <a href="https://www.tiktok.com/" className="inline-flex items-center text-sm font-medium text-center text-black hover:text-black">10k</a>
+                                    <a href="https://www.tiktok.com/" className="inline-flex items-center text-sm font-medium text-center text-black hover:text-black">{seller.tiktokFollower}</a>
                                 </div>
                             </div>
                         </div>
