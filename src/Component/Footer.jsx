@@ -20,10 +20,10 @@ function Footer() {
                         </h2>
                         <ul className="text-gray-600 dark:text-gray-400">
                             <li className="mb-4">
-                                <a href="#" className="text-white font-normal hover:text-white">About Us</a>
+                                <a href="/about" className="text-white font-normal hover:text-white">About Us</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="text-white font-normal hover:text-white">Our Sevice</a>
+                                <a href="/order" className="text-white font-normal hover:text-white">Our Sevice</a>
                             </li>
                         </ul>
                     </div>
@@ -33,7 +33,7 @@ function Footer() {
                         </h2>
                         <ul className="text-gray-600 dark:text-gray-400">
                             <li className="mb-4">
-                                <a href="#"
+                                <a href="/faq"
                                     className="text-white font-normal hover:text-white">FAQ</a>
                             </li>
                             <li>

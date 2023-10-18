@@ -17,13 +17,10 @@ export default function DropdownSD() {
           <Menu.Items className="absolute mt-2 right-0 w-48 rounded-2xl bg-secondary shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="px-1 py-1 ">
               <Menu.Item>
-                  <button className='group flex w-full items-center rounded-2xl px-2 py-2 text-sm text-white  bg-secondary hover:bg-primary'>Hubungi</button>
-              </Menu.Item>
-              <Menu.Item>
                   <button className='group flex w-full items-center rounded-2xl px-2 py-2 text-sm text-white  bg-secondary hover:bg-primary'>Chat</button>
               </Menu.Item>
               <Menu.Item>
-                  <button className='group flex w-full items-center rounded-2xl px-2 py-2 text-sm text-white bg-secondary hover:bg-primary'>Diskusi</button>
+                  <button className='group flex w-full items-center rounded-2xl px-2 py-2 text-sm text-white bg-secondary hover:bg-primary'>Contact</button>
               </Menu.Item>
             </div>
           </Menu.Items>

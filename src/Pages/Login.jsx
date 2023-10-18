@@ -27,9 +27,11 @@ function Login() {
                 <label for="name" className="block mb-2 text-lg font-medium text-black text-left mt-10 ml-32">Name</label>
                 <input type="text" id="name" className="bg-white border border-gray-400 text-lg ml-32 rounded-lg focus:ring-black-500 focus:border-black-500 block w-4/6 px-6 py-3 text-black" placeholder="Your Name" required></input>
                 <label for="password" class="block mb-2 text-lg font-medium text-black text-left mt-4 ml-32">Pasword</label>
-                <input type="password" id="password" class="bg-white border border-gray-400 text-black text-lg ml-32 rounded-lg focus:ring-black-500 focus:border-black-500 block w-4/6 px-6 py-3 dark:placeholder-gray-400 text-black " placeholder="•••••••••" required/>
-                <button type="submit" class="text-white bg-secondary font-medium rounded-[16px] text-lg w-4/12  px-5 py-3 mt-10 text-center ml-[255px]">Login</button>
-                <p className='text-xl font-medium text-black text-center mt-8 justify-center'>Don't have account yet? <Link href="#" className="text-black hover:text-black">Sign Up</Link></p>
+                <input type="password" id="password" class="bg-white border border-gray-400 text-black text-lg ml-32 rounded-lg focus:ring-black-500 focus:border-black-500 block w-4/6 px-6 py-3 " placeholder="•••••••••"  required></input>
+                <Link to="/order">
+                  <button type="submit" class="text-white bg-secondary font-medium rounded-[16px] text-lg w-4/12  px-5 py-3 mt-10 text-center ml-[255px]">Login</button>
+                </Link>
+                <p className='text-xl font-medium text-black text-center mt-8 justify-center'>Don't have account yet? <Link to="/register" className="text-black hover:text-black">Sign Up</Link></p>
                 
                 </div>
               </div>

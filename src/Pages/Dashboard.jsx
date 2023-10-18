@@ -10,6 +10,7 @@ import backgroundThird from '../assets/img/background/bg3.png'
 import backgroundFourth from '../assets/img/background/bg4.png'
 import backgroundFifth from '../assets/img/background/bg5.png'
 import Footer from '../Component/Footer';
+import { Link } from 'react-router-dom';
 
 function Dashboard() {
   return (
@@ -47,9 +48,12 @@ function Dashboard() {
                             <div className='lg:w-[580px]'>
                                 <p className='text-lg pt-8 text-white-500'>Welcome to SocioBox  Optimizing MSME Digital Marketing. We are here to support the growth and success of Micro, Small and Medium Enterprises (MSMEs) businesses through effective digital marketing strategies.</p>
                             </div>
-                            <button className='mt-10 bg-primary border-1 border-white px-12 py-4 hover:border-none hover:bg-white hover:text-primary'>
+                            <Link to="/login">
+                                <button className='mt-10 bg-primary border-1 border-white px-12 py-4 hover:border-none hover:bg-white hover:text-primary'>
                                 <p className='text-lg font-semibold'>Get Started</p>
-                            </button>
+                            </button>   
+                            </Link>
+                            
                         </div>
                         <div className='hidden lg:flex lg:justify-center'>
                             <img className='pr-48' src={jumbotron} alt="" />

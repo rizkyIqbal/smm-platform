@@ -35,7 +35,7 @@ function Navbar() {
                 <div className="hidden md:flex space-x-4 col-span-2 py-12">
                     <Link to="/" className="text-white font-medium hover:text-white">Home</Link>
                     <Link to="/order" className="text-white font-medium hover:text-white">Order</Link>
-                    <Link to="#" className="text-white font-medium hover:text-white">About Us</Link>
+                    <Link to="/about" className="text-white font-medium hover:text-white">About Us</Link>
                     <Link to="#" className="text-white font-medium hover:text-white">Contact</Link>
                 </div>
             </div>
