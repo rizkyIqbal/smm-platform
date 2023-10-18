@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Order from './Pages/Order'
 import SMMOrder from './Pages/SMMOrder'
+import InfluencerOrder from './Pages/InfluencerOrder'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/seller" element={<SellerList/>} />
       <Route path="/faq" element={<Faq/>} />
       <Route path="/order/smm" element={<SMMOrder />} />
+      <Route path="/order/influencer" element={<InfluencerOrder />} />
     </Routes>
   )
 }
