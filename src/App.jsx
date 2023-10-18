@@ -10,6 +10,7 @@ import Order from './Pages/Order'
 import SellerDetail from './Pages/SellerDetail'
 import SMMOrder from './Pages/SMMOrder'
 import AboutUs from './Pages/AboutUs'
+import InfluencerOrder from './Pages/InfluencerOrder'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/sellerdetail" element={<SellerDetail/>} />
       <Route path="/order/smm" element={<SMMOrder />} />
       <Route path="/about" element={<AboutUs />} />
+      <Route path="/order/influencer" element={<InfluencerOrder />} />
     </Routes>
   )
 }
