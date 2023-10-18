@@ -10,6 +10,8 @@ import Order from './Pages/Order'
 import SellerDetail from './Pages/SellerDetail'
 import SMMOrder from './Pages/SMMOrder'
 import AboutUs from './Pages/AboutUs'
+import Profile from './Pages/Profile'
+import EditProfile from './Pages/EditProfile'
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Route path="/sellerdetail" element={<SellerDetail/>} />
       <Route path="/order/smm" element={<SMMOrder />} />
       <Route path="/about" element={<AboutUs />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/edit" element={<EditProfile />} />
     </Routes>
   )
 }
