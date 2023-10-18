@@ -37,9 +37,11 @@ function Order() {
                 <div className='mr-96'>
                   <p className='text-3xl font-medium'>Influencer</p>
                   <p className='text-xl mt-2'>Introduce your products throught the right influencers.</p>
-                  <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:text-white'>
-                    Start Now
-                  </button>
+                  <Link to="/order/influencer">
+                    <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:text-white'>
+                      Start Now
+                    </button>
+                  </Link>
                 </div>
                 <img src={sectionInfluencer} className='w-[620px] h-auto' alt="" />
               </div>
