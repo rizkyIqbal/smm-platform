@@ -16,19 +16,20 @@ function Login() {
     return (
       <>
       
-        <section className='body-font font-poppins w-screen h-full bg-primary'>
+        <section className='body-font font-poppins w-screen h-full '>
             <Navbar2 />
+            <div className='w-screen h-full absolute bg-primary -z-20 '></div>
 
-            {/* <div className=''>
-            <div className='absolute top-32 left-0'>
+            <div className='flex'>
+            <div className='absolute top-32 left-0 -z-20'>
                 <img src={backgroundSix} className='w-[620px] h-auto' alt="" />
             </div>
-            <div className='absolute bottom-[-412px] right-0'>
+            <div className='absolute bottom-[-128px] right-0 -z-20'>
                 <img src={backgroundSeven} className='w-[700px] h-auto' alt="" />   
             </div>
-            </div> */}
+            </div>
 
-            <div className='flex pl-24 pr-24 pb-24 mt-32'>
+            <div className='flex pl-24 pr-24'>
               <div className='mt-8 w-full h-auto bg-white rounded-l-3xl shadow-2xl shadow-silver-500 pb-52'>
                 <p className='text-5xl font-bold text-black text-center mt-44'>Log In</p>
                 <div>
@@ -36,7 +37,7 @@ function Login() {
                 <input type="text" id="name" className="bg-white border border-gray-400 text-lg ml-32 rounded-lg focus:ring-black-500 focus:border-black-500 block w-4/6 px-6 py-3 text-black" placeholder="Your Name" required></input>
                 <label for="password" class="block mb-2 text-lg font-medium text-black text-left mt-4 ml-32">Pasword</label>
                 <input type={isPasswordVisible ? "text" : "password"} id="password" class="bg-white border border-gray-400 text-black text-lg ml-32 rounded-lg focus:ring-black-500 focus:border-black-500 block w-4/6 px-6 py-3 " placeholder="•••••••••"  required></input>
-                <button className="absolute top-[700px] left-[630px] " onClick={togglePasswordVisibility}>
+                {/* <button className="absolute top-[700px] left-[630px] " onClick={togglePasswordVisibility}>
                   {isPasswordVisible ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +74,7 @@ function Login() {
                       />
                     </svg>
                   )}
-                </button>
+                </button> */}
                 <Link to="/order">
                   <button type="submit" class="text-white bg-secondary font-medium rounded-[16px] text-lg w-4/12  px-5 py-3 mt-10 text-center ml-[255px]">Login</button>
                 </Link>
