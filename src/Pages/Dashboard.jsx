@@ -11,7 +11,6 @@ import backgroundThird from '../assets/img/background/bg3.png'
 import backgroundFourth from '../assets/img/background/bg4.png'
 import backgroundFifth from '../assets/img/background/bg5.png'
 import Footer from '../Component/Footer';
-import { Link } from 'react-router-dom';
 
 function Dashboard() {
   return (
