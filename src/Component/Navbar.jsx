@@ -25,8 +25,8 @@ function Navbar() {
                     <div className="grid grid-cols-2">
                       <Link to="/" className="text-white font-medium hover:text-white">Home</Link>
                       <Link to="/order" className="text-white font-medium hover:text-white">Order</Link>
-                      <Link to="#" className="text-white font-medium hover:text-white">About Us</Link>
-                      <Link to="#" className="text-white font-medium hover:text-white">Contact</Link>
+                      <Link to="/about" className="text-white font-medium hover:text-white">About Us</Link>
+                      <Link to="/contact" className="text-white font-medium hover:text-white">Contact</Link>
                     </div>
 
                     <img src="/solutions.jpg" alt="" />
@@ -36,7 +36,7 @@ function Navbar() {
                     <Link to="/" className="text-white font-medium hover:text-white">Home</Link>
                     <Link to="/order" className="text-white font-medium hover:text-white">Order</Link>
                     <Link to="/about" className="text-white font-medium hover:text-white">About Us</Link>
-                    <Link to="#" className="text-white font-medium hover:text-white">Contact</Link>
+                    <Link to="/contact" className="text-white font-medium hover:text-white">Contact</Link>
                 </div>
             </div>
             <div className='flex justify-center items-center'>

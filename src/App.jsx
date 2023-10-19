@@ -13,6 +13,7 @@ import AboutUs from './Pages/AboutUs'
 import Profile from './Pages/Profile'
 import EditProfile from './Pages/EditProfile'
 import InfluencerOrder from './Pages/InfluencerOrder'
+import ContactUs from './Pages/ContactUs'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/sellerdetail" element={<SellerDetail/>} />
       <Route path="/order/smm" element={<SMMOrder />} />
       <Route path="/about" element={<AboutUs />} />
+      <Route path="/contact" element={<ContactUs />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/edit" element={<EditProfile />} />
       <Route path="/order/influencer" element={<InfluencerOrder />} />
