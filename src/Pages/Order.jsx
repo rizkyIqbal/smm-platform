@@ -4,6 +4,7 @@ import backgroundBottom from '../assets/img/background/order/bottom.png'
 import sectionOrder from '../assets/img/sectionOrder.png'
 import sectionInfluencer from '../assets/img/sectionInfluencer.png'
 import Footer from '../Component/Footer';
+import { Link } from 'react-router-dom'
 
 function Order() {
   return (
@@ -25,18 +26,22 @@ function Order() {
                 <div className='ml-12'>
                   <p className='text-3xl font-medium'>Social Media Management</p>
                   <p className='text-xl mt-2'>Create your business content with social media without hassle.</p>
-                  <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>
-                    Start Now
-                  </button>
+                  <Link to="/order/smm">
+                    <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>
+                      Start Now
+                    </button>
+                  </Link>
                 </div>
               </div> 
               <div className='flex items-center justify-end mt-24'>
                 <div className='mr-96'>
                   <p className='text-3xl font-medium'>Influencer</p>
                   <p className='text-xl mt-2'>Introduce your products throught the right influencers.</p>
-                  <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:text-white'>
-                    Start Now
-                  </button>
+                  <Link to="/order/influencer">
+                    <button className='btn w-44 mt-4 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:text-white'>
+                      Start Now
+                    </button>
+                  </Link>
                 </div>
                 <img src={sectionInfluencer} className='w-[620px] h-auto' alt="" />
               </div>
