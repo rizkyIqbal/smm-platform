@@ -10,6 +10,7 @@ import { AiFillStar } from "react-icons/ai";
 import {IoLocationSharp} from "react-icons/io5"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { Link } from 'react-router-dom';
 
 const categories = ['Food', 'Fashion', 'Kithcenware', 'Sport', 'Other'];
 const sellers = [
@@ -647,35 +648,38 @@ function SellerList() {
 
                     <div className="grid grid-cols-3 gap-16 border-gray-600 w-fit h-fit">
                     {sellers.map((seller) => (
-                        <div className="flex justify-center w-[288px] bg-white border border-gray-400 rounded-lg shadow">
-                            <div className="flex flex-col items-center pb-10 mt-8 -mb-4">
-                                <img className="w-36 h-36 mb-3 rounded-full shadow-lg" src={seller.photo} alt=""/>
-                                <h5 className=" text-[16px] font-medium text-gray-900">{seller.name}</h5>
-                                <div className="flex">
-                                <IoLocationSharp color='grey' fontSize="16px"/>
-                                <span className="text-[10px] text-gray-500">{seller.location}</span>
-                                </div>
-                                <div className="flex space-x-3 md:mt-2 pl-3 pr-3 text-sm font-bold text-center text-primary">
-                                <p>Rp. {seller.lowerPrice} - Rp. {seller.highestPrice}</p>
-                                </div>
-                                <div className="flex mt-4 space-x-2 md:mt-2 justify-center">
-                                <FiClipboard color='gray' fontSize="16px" />
-                                <p className="inline-flex items-center  text-xs font-medium text-center text-black">{seller.estTime} Week</p>
-                                <GoBook color='gray' fontSize="16px" />
-                                <p className="inline-flex items-center text-xs font-medium text-center text-black">{seller.queuePerson} People</p>
-                                </div>
-                                <div className="flex space-x-2 md:mt-2 justify-center">
-                                <AiFillStar color='gold' fontSize="24px"/>
-                                <p className="inline-flex items-center text-xs font-medium text-center text-black">{seller.rating} | 15 orders</p>
-                                </div>
-                                <div className="flex space-x-2 md:mt-2 justify-center ">
-                                    <BsInstagram color='gray' fontSize="24px" />
-                                    <a href="https://www.instagram.com/" className="inline-flex items-center text-xs font-medium text-center text-black hover:text-black">{seller.igFollower}</a>
-                                    <BiLogoTiktok color='gray' fontSize="24px" />
-                                    <a href="https://www.tiktok.com/" className="inline-flex items-center text-sm font-medium text-center text-black hover:text-black">{seller.tiktokFollower}</a>
+                        <Link to='/sellerdetail'>
+                            <div className="flex justify-center w-[288px] bg-white border border-gray-400 rounded-lg shadow">
+                                <div className="flex flex-col items-center pb-10 mt-8 -mb-4">
+                                    <img className="w-36 h-36 mb-3 rounded-full shadow-lg" src={seller.photo} alt=""/>
+                                    <h5 className=" text-[16px] font-medium text-gray-900">{seller.name}</h5>
+                                    <div className="flex">
+                                    <IoLocationSharp color='grey' fontSize="16px"/>
+                                    <span className="text-[10px] text-gray-500">{seller.location}</span>
+                                    </div>
+                                    <div className="flex space-x-3 md:mt-2 pl-3 pr-3 text-sm font-bold text-center text-primary">
+                                    <p>Rp. {seller.lowerPrice} - Rp. {seller.highestPrice}</p>
+                                    </div>
+                                    <div className="flex mt-4 space-x-2 md:mt-2 justify-center">
+                                    <FiClipboard color='gray' fontSize="16px" />
+                                    <p className="inline-flex items-center  text-xs font-medium text-center text-black">{seller.estTime} Week</p>
+                                    <GoBook color='gray' fontSize="16px" />
+                                    <p className="inline-flex items-center text-xs font-medium text-center text-black">{seller.queuePerson} People</p>
+                                    </div>
+                                    <div className="flex space-x-2 md:mt-2 justify-center">
+                                    <AiFillStar color='gold' fontSize="24px"/>
+                                    <p className="inline-flex items-center text-xs font-medium text-center text-black">{seller.rating} | 15 orders</p>
+                                    </div>
+                                    <div className="flex space-x-2 md:mt-2 justify-center ">
+                                        <BsInstagram color='gray' fontSize="24px" />
+                                        <a href="https://www.instagram.com/" className="inline-flex items-center text-xs font-medium text-center text-black hover:text-black">{seller.igFollower}</a>
+                                        <BiLogoTiktok color='gray' fontSize="24px" />
+                                        <a href="https://www.tiktok.com/" className="inline-flex items-center text-sm font-medium text-center text-black hover:text-black">{seller.tiktokFollower}</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
+
                         ))}
                     </div>
                     </div>
@@ -1068,6 +1072,7 @@ function SellerList() {
 
                     <div className="grid grid-cols-3 gap-16 border-gray-600 w-fit h-fit">
                     {sellersSMM.map((seller) => (
+                         <Link to='/sellerdetail'>
                         <div className="flex justify-center w-[288px] bg-white border border-gray-400 rounded-lg shadow">
                             <div className="flex flex-col items-center pb-10 mt-8 -mb-4">
                                 <img className="w-36 h-36 mb-3 rounded-full shadow-lg" src={seller.photo} alt=""/>
@@ -1097,6 +1102,7 @@ function SellerList() {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                         ))}
                     </div>
                     </div>
