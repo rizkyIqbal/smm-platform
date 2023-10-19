@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react'
-import Navbar from '../Component/Navbar'
+import Navbar2 from '../Component/Navbar'
 import { Link } from "react-router-dom";
 import backgroundSix from '../assets/img/background/bg6.png'
 import backgroundSeven from '../assets/img/background/bg7.png'
@@ -87,7 +87,7 @@ function Register() {
       </Transition>
       
         <section className='body-font font-poppins w-screen h-full bg-primary'>
-            <Navbar />
+            <Navbar2 />
 {/* 
             <div className=''>
             <div className='absolute top-32 left-0'>

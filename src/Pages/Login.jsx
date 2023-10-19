@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Navbar from '../Component/Navbar'
+import Navbar2 from '../Component/Navbar'
 import jumbotron from '../assets/img/jumbotron.png'
 import { Link } from "react-router-dom";
 import backgroundSix from '../assets/img/background/bg6.png'
@@ -17,7 +17,7 @@ function Login() {
       <>
       
         <section className='body-font font-poppins w-screen h-full bg-primary'>
-            <Navbar />
+            <Navbar2 />
 
             {/* <div className=''>
             <div className='absolute top-32 left-0'>
@@ -87,6 +87,7 @@ function Login() {
                 </div>
               </div>
             </div>
+
 
         </section>
       </>

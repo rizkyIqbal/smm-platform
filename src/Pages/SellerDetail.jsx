@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Navbar from '../Component/Navbar'
+import Navbar from '../Component/NavbarLogged'
 import Footer from '../Component/Footer';
 import DropdownSD from '../Component/DropdownSD';
 import profile2 from '../assets/img/profile/profile2.png';

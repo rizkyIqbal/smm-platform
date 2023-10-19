@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Navbar from '../Component/Navbar';
+import Navbar from '../Component/NavbarLogged';
 import Footer from '../Component/Footer';
 import profile11 from '../assets/img/profile/profile11.png';
 import {ImExit} from 'react-icons/im';

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from "react-router-dom";
-import Navbar from '../Component/Navbar'
+import Navbar from '../Component/NavbarLogged'
 import jumbotron from '../assets/img/jumbotron.png'
 // import Card from '../Component/Card'
 import Card from '../Component/Card';

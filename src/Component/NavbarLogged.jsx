@@ -40,6 +40,11 @@ function Navbar() {
                     <Link to="/contact" className="text-white font-medium hover:text-white">Contact</Link>
                 </div>
             </div>
+            <div className='flex justify-center items-center'>
+              <Link to="/profile">
+                <img class="w-14 h-auto rounded-full" src={profil11} alt="Rounded avatar"></img>
+              </Link>
+            </div>
         </div>
       </div>
     </>

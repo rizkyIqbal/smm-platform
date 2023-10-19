@@ -1,4 +1,4 @@
-import Navbar from '../Component/Navbar'
+import Navbar from '../Component/NavbarLogged'
 import backgroundTop from '../assets/img/background/order/top.png'
 import backgroundBottom from '../assets/img/background/order/bottom.png'
 import sectionOrder from '../assets/img/sectionOrder.png'

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Navbar from '../Component/Navbar'
+import Navbar from '../Component/NavbarLogged'
 import Footer from '../Component/Footer';
 import CardSL from '../Component/CardSL';
 import {BsInstagram} from 'react-icons/bs'

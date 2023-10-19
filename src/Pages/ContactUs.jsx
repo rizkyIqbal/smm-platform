@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Navbar from '../Component/Navbar'
+import Navbar from '../Component/NavbarLogged'
 import Footer from '../Component/Footer';
 import { IoLocationOutline } from 'react-icons/io5';
 import { BsTelephone } from 'react-icons/bs';

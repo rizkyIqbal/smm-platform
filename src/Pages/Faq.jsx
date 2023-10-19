@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Navbar from '../Component/Navbar'
+import Navbar from '../Component/NavbarLogged'
 import jumbotron from '../assets/img/jumbotron.png'
 // import Card from '../Component/Card'
 import Card from '../Component/Card';
