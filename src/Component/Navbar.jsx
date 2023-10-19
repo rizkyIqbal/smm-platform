@@ -3,6 +3,7 @@ import logo from '../assets/img/logo.png'
 import { Link } from "react-router-dom";
 import { Popover } from '@headlessui/react'
 import { HiMenuAlt3 } from "react-icons/hi";
+import profil11 from '../assets/img/profile/profile11.png'
 
 function Navbar() {
   return (
@@ -41,7 +42,7 @@ function Navbar() {
             </div>
             <div className='flex justify-center items-center'>
               <Link to="/profile">
-                <img class="w-14 h-auto rounded-full" src="https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8" alt="Rounded avatar"></img>
+                <img class="w-14 h-auto rounded-full" src={profil11} alt="Rounded avatar"></img>
               </Link>
             </div>
         </div>
