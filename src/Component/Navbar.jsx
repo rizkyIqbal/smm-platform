@@ -8,8 +8,8 @@ function Navbar() {
   return (
     <>
       <div className='w-screen h-32 bg-[#D988B9] lg:px-16 px-6'>
-        <div className='lg:w-[475px] w-full h-full'>
-            <div className='lg:grid lg:grid-cols-3 h-full flex justify-between items-center'>
+        <div className='lg:w-full lg:flex lg:item-center lg:justify-between w-full h-full'>
+            <div className='lg:flex lg:justify-start lg:gap-8 h-full flex justify-between items-center'>
                 <div className='w-28 h-auto'>
                     <img src={logo} alt="" /> 
                 </div>
@@ -38,6 +38,11 @@ function Navbar() {
                     <Link to="/about" className="text-white font-medium hover:text-white">About Us</Link>
                     <Link to="#" className="text-white font-medium hover:text-white">Contact</Link>
                 </div>
+            </div>
+            <div className='flex justify-center items-center'>
+              <Link to="/profile">
+                <img class="w-14 h-auto rounded-full" src="https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8" alt="Rounded avatar"></img>
+              </Link>
             </div>
         </div>
       </div>
