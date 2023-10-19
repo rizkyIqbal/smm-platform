@@ -8,6 +8,8 @@ import {GoBook} from 'react-icons/go'
 import {FiClipboard} from 'react-icons/fi'
 import { AiFillStar } from "react-icons/ai";
 import {IoLocationSharp} from "react-icons/io5"
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 const categories = ['Food', 'Fashion', 'Kithcenware', 'Sport', 'Other'];
 const sellers = [
@@ -120,6 +122,110 @@ const sellers = [
         photo: "/src/assets/img/profile/profile10.jpg"
     },
 ];
+const sellersSMM = [
+    {
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },{
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },{
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },{
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },{
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },{
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },{
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },{
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },{
+        name: "Solutive.id",
+        location: "Depok, Jawa Barat",
+        lowerPrice : "350.000",
+        highestPrice : "550.000",
+        rating: "3.9",
+        estTime: 2,
+        queuePerson: 4,
+        igFollower : "10k",
+        tiktokFollower: "10K",
+        photo: "https://storage.googleapis.com/neat-element-283712.appspot.com/company/logo/25885/20221019_JC1648216541621_Logo-Mark-Solutive-JPG-6.2.jpg"
+    },
+    
+];
+
 
 
 function SellerList() {
@@ -143,7 +249,18 @@ function SellerList() {
                     </form>
                 </div>
 
-                <div className="flex gap-28 justify-center">
+                
+                {/* <div className='px-64'> */}
+                
+
+                <Tabs>
+                    <TabList className='px-96 mb-6 text-black'>
+                    <Tab>Influencer</Tab>
+                    <Tab>Social Media Management</Tab>
+                    </TabList>
+
+                    <TabPanel>
+                    <div className="flex gap-28 justify-center">
                     <div className=''>
                         <div className='flex p-4 top-8 justify-center w-80 border border-gray-500 rounded-t-3xl'>
                             <button className="justify-center text-white bg-secondary font-medium w-52 rounded-xl text-lg p-1 text-center inline-flex items-center flex" type="button">Kategori<svg class="w-2.5 h-2.5 ml-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -560,19 +677,432 @@ function SellerList() {
                             </div>
                         </div>
                         ))}
-                        
-                        {/* <CardSL /> */}
-                        {/* <CardSL />
-                        <CardSL />
-                        <CardSL />
-                        <CardSL />
-                        <CardSL />
-                        <CardSL />
-                        <CardSL />
-                        <CardSL /> */}
                     </div>
-                </div>
-            
+                    </div>
+                    </TabPanel>
+                    <TabPanel>
+                    <div className="flex gap-28 justify-center">
+                    <div className=''>
+                        <div className='flex p-4 top-8 justify-center w-80 border border-gray-500 rounded-t-3xl'>
+                            <button className="justify-center text-white bg-secondary font-medium w-52 rounded-xl text-lg p-1 text-center inline-flex items-center flex" type="button">Kategori<svg class="w-2.5 h-2.5 ml-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                            </button>
+                        </div>
+
+                        <div className='p-4 top-[102px] w-80 border border-gray-500 rounded-none'>
+                            {categories.map((category) => (
+                                <div class="flex items-center mb-4">
+                                    <div class="inline-flex items-center">
+                                        <label
+                                        class="relative flex cursor-pointer items-center rounded-full p-3"
+                                        for="checkbox-1"
+                                        data-ripple-dark="true"
+                                        >
+                                        <input
+                                            type="checkbox"
+                                            class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                            id="checkbox-1"
+                        
+                                        />
+                                        <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                            <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-3.5 w-3.5"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            stroke="currentColor"
+                                            stroke-width="1"
+                                            >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                            </svg>
+                                        </div>
+                                        </label>
+                                    </div>
+                                    <label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">{category}</label>
+                                </div>
+                            ))}
+                            <div className='flex p-3 -ml-3 items-center justify-center w-80'>
+                                <button className="justify-center text-white bg-secondary font-medium w-52  rounded-xl text-lg p-1 text-center inline-flex items-center flex" type="button">Influencer<svg class="w-2.5 h-2.5 ml-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div className='p-4 top-[436px] w-80 border border-gray-500 rounded-none'>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">IG Nano (5k-15k)</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">IG Micro (50k-200k)</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">IG Macro (300k-500k)</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">IG Mega (500k++)</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Tiktok Nano (5k-15k)</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Tiktok Micro (50k-200k)</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Tiktok Macro (300k-500k)</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Tiktok Mega (500k++)</label>
+                            </div>
+                            <div className='flex p-3 -ml-3 items-center justify-center w-80'>
+                                <button className="justify-center text-white bg-secondary font-medium w-52  rounded-xl text-lg p-1 text-center inline-flex items-center flex" type="button">Gender<svg class="w-2.5 h-2.5 ml-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div className='p-4 top-[915px] w-80 border border-gray-500 rounded-b-xl'>
+                        <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Laki-laki</label>
+                            </div>
+                            <div class="flex items-center mb-4">
+                                <div class="inline-flex items-center">
+                                    <label
+                                    class="relative flex cursor-pointer items-center rounded-full p-3"
+                                    for="checkbox-1"
+                                    data-ripple-dark="true"
+                                    >
+                                    <input
+                                        type="checkbox"
+                                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-primary checked:bg-primary checked:before:bg-pink-500 hover:before:opacity-10"
+                                        id="checkbox-1"
+                    
+                                    />
+                                    <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-white opacity-0 transition-opacity peer-checked:opacity-100">
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-3.5 w-3.5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                        >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                        </svg>
+                                    </div>
+                                    </label>
+                                </div><label for="default-checkbox" class="ml-2 text-lg font-medium text-gray-900">Perempuan</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-16 border-gray-600 w-fit h-fit">
+                    {sellersSMM.map((seller) => (
+                        <div className="flex justify-center w-[288px] bg-white border border-gray-400 rounded-lg shadow">
+                            <div className="flex flex-col items-center pb-10 mt-8 -mb-4">
+                                <img className="w-36 h-36 mb-3 rounded-full shadow-lg" src={seller.photo} alt=""/>
+                                <h5 className=" text-[16px] font-medium text-gray-900">{seller.name}</h5>
+                                <div className="flex">
+                                <IoLocationSharp color='grey' fontSize="16px"/>
+                                <span className="text-[10px] text-gray-500">{seller.location}</span>
+                                </div>
+                                <div className="flex space-x-3 md:mt-2 pl-3 pr-3 text-sm font-bold text-center text-primary">
+                                <p>Rp. {seller.lowerPrice} - Rp. {seller.highestPrice}</p>
+                                </div>
+                                <div className="flex mt-4 space-x-2 md:mt-2 justify-center">
+                                <FiClipboard color='gray' fontSize="16px" />
+                                <p className="inline-flex items-center  text-xs font-medium text-center text-black">{seller.estTime} Week</p>
+                                <GoBook color='gray' fontSize="16px" />
+                                <p className="inline-flex items-center text-xs font-medium text-center text-black">{seller.queuePerson} People</p>
+                                </div>
+                                <div className="flex space-x-2 md:mt-2 justify-center">
+                                <AiFillStar color='gold' fontSize="24px"/>
+                                <p className="inline-flex items-center text-xs font-medium text-center text-black">{seller.rating} | 15 orders</p>
+                                </div>
+                                <div className="flex space-x-2 md:mt-2 justify-center ">
+                                    <BsInstagram color='gray' fontSize="24px" />
+                                    <a href="https://www.instagram.com/" className="inline-flex items-center text-xs font-medium text-center text-black hover:text-black">{seller.igFollower}</a>
+                                    <BiLogoTiktok color='gray' fontSize="24px" />
+                                    <a href="https://www.tiktok.com/" className="inline-flex items-center text-sm font-medium text-center text-black hover:text-black">{seller.tiktokFollower}</a>
+                                </div>
+                            </div>
+                        </div>
+                        ))}
+                    </div>
+                    </div>
+                    </TabPanel>
+                </Tabs>
+
             <div className='w-screen absolute bottom-[-1150px]'>
             <Footer/>
             </div>
@@ -583,3 +1113,4 @@ function SellerList() {
 }
 
 export default SellerList
+
