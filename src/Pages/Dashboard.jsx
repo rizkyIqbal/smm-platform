@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 import Navbar from '../Component/Navbar'
 import jumbotron from '../assets/img/jumbotron.png'
 // import Card from '../Component/Card'
@@ -47,9 +48,11 @@ function Dashboard() {
                             <div className='lg:w-[580px]'>
                                 <p className='text-lg pt-8 text-white-500'>Welcome to SocioBox  Optimizing MSME Digital Marketing. We are here to support the growth and success of Micro, Small and Medium Enterprises (MSMEs) businesses through effective digital marketing strategies.</p>
                             </div>
-                            <button className='mt-10 bg-primary border-1 border-white px-12 py-4 hover:border-none hover:bg-white hover:text-primary'>
-                                <p className='text-lg font-semibold'>Get Started</p>
-                            </button>
+                            <Link to="/login">
+                                <button className='mt-10 bg-primary border-1 border-white px-12 py-4 text-white hover:border-none hover:bg-white hover:text-primary'>
+                                    <p className='text-lg font-semibold'>Get Started</p>
+                                </button>
+                            </Link>
                         </div>
                         <div className='hidden lg:flex lg:justify-center'>
                             <img className='pr-48' src={jumbotron} alt="" />
@@ -72,7 +75,9 @@ function Dashboard() {
                 <Card />
             </div>
             <div className='flex justify-center mt-32'>
-                <button className='btn bg-transparent border-[3px] border-primary text-primary text-lg font-bold px-16 py-4 hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>See All</button>
+                <Link to="/seller">
+                    <button className='btn bg-transparent border-[3px] border-primary text-primary text-lg font-bold px-16 py-4 hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>See All</button>
+                </Link>
             </div>
         </div> 
         <div className='h-[980px] text-black'>
@@ -89,7 +94,9 @@ function Dashboard() {
                 <CardSMM />
             </div>
             <div className='flex justify-center mt-32'>
-                <button className='btn bg-transparent border-[3px] border-primary text-primary text-lg font-bold px-16 py-4 hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>See All</button>
+                <Link to="/seller">
+                    <button className='btn bg-transparent border-[3px] border-primary text-primary text-lg font-bold px-16 py-4 hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>See All</button>
+                </Link>
             </div>
         </div>
         <div className='h-[490px] mt-28 text-black'>
