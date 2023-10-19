@@ -8,9 +8,10 @@ import {GoBook} from 'react-icons/go'
 import {FiClipboard} from 'react-icons/fi'
 import { AiFillStar } from "react-icons/ai";
 import {IoLocationSharp} from "react-icons/io5"
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Link } from 'react-router-dom';
+import { Tab } from '@headlessui/react'
 
 const categories = ['Food', 'Fashion', 'Kithcenware', 'Sport', 'Other'];
 const sellers = [
@@ -230,6 +231,7 @@ const sellersSMM = [
 
 
 function SellerList() {
+    const [selectedIndex, setSelectedIndex] = useState(0);
     return (
         <>
         <section className='body-font font-poppins w-screen h-full bg-white'>
@@ -251,16 +253,37 @@ function SellerList() {
                 </div>
 
                 
-                {/* <div className='px-64'> */}
+
                 
+                <Tab.Group>
+                <div className='flex justify-center mb-12'>
+                    <div className='w-fit bg-gray-100 p-1 rounded-lg'>
+                    <Tab.List>
+                        <div className='flex gap-3'>
+                        <Tab
+                        onClick={() => setSelectedIndex(0)} // Set the selected index on click
+                        className={`cursor-pointer ${
+                            selectedIndex === 0 ? "bg-primary text-white" : " text-black"
+                        } p-2`}
+                        >
+                            Influencer
+                        </Tab>
+                        <Tab
+                        onClick={() => setSelectedIndex(1)} // Set the selected index on click
+                        className={`cursor-pointer ${
+                            selectedIndex === 1 ? "bg-primary text-white" : " text-black"
+                        } p-2`}
+                        >
+                            Social Media Management
+                        </Tab>
+                        </div>
+                    </Tab.List>
+                    </div>
+                </div>
 
-                <Tabs>
-                    <TabList className='px-96 mb-6 text-black'>
-                    <Tab>Influencer</Tab>
-                    <Tab>Social Media Management</Tab>
-                    </TabList>
 
-                    <TabPanel>
+                <Tab.Panels>
+                    <Tab.Panel>
                     <div className="flex gap-28 justify-center">
                     <div className=''>
                         <div className='flex p-4 top-8 justify-center w-80 border border-gray-500 rounded-t-3xl'>
@@ -683,9 +706,9 @@ function SellerList() {
                         ))}
                     </div>
                     </div>
-                    </TabPanel>
-                    <TabPanel>
-                    <div className="flex gap-28 justify-center">
+                    </Tab.Panel>
+                    <Tab.Panel>
+                        <div className="flex gap-28 justify-center">
                     <div className=''>
                         <div className='flex p-4 top-8 justify-center w-80 border border-gray-500 rounded-t-3xl'>
                             <button className="justify-center text-white bg-secondary font-medium w-52 rounded-xl text-lg p-1 text-center inline-flex items-center flex" type="button">Kategori<svg class="w-2.5 h-2.5 ml-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -1106,8 +1129,9 @@ function SellerList() {
                         ))}
                     </div>
                     </div>
-                    </TabPanel>
-                </Tabs>
+                    </Tab.Panel>
+                </Tab.Panels>
+                </Tab.Group>
 
             <div className='w-screen absolute bottom-[-1150px]'>
             <Footer/>
