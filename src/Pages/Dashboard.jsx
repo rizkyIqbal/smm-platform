@@ -184,9 +184,11 @@ function Dashboard() {
                         <p className='mt-4 mb-4 text-lg text-gray-500'>Social media provides a direct and immediate channel to engage with your target audience. It allows you to connect with your customers, answer their questions, and respond to their feedback in real-time, fostering a sense of community and trust. Social media is a powerful tool for sharing content. It allows you to distribute blog posts, videos, infographics, and other valuable content to a wider audience, increasing the chances of your content going viral. Your competitors are likely already using social media for their marketing efforts. By managing your social media effectively, you can gain a competitive edge in your industry.</p>
                     </div>
                     <div className='flex justify-center lg:justify-start'>
-                        <button className='btn w-44 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>
-                            Contact Us
-                        </button>
+                        <Link to='/contact'>
+                            <button className='btn w-44 bg-transparent border-[3px] border-primary text-primary text-lg font-bold hover:bg-primary hover:border-[3px] hover:border-white hover:text-white'>
+                                Contact Us
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
