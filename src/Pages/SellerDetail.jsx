@@ -66,8 +66,8 @@ function SellerDetail () {
                         <IoPricetagOutline color='black' fontSize="36px"/>
                         <span className="text-[22px] text-black ml-4">Rp. 350.000</span>
                     </div>
-                    <button className="absolute top-[110px] right-[15px] text-[16px] text-black rounded-2xl border border-primary hover:bg-primary">Pilih Project</button>
-                    <BsInstagram color='' fontSize="80px" className='absolute top-[46px] left-[24px]' />
+                    <button className="absolute top-[110px] right-[15px] text-[16px] text-black rounded-2xl border border-primary bg-white hover:bg-primary text-primary hover:text-white">Pilih Project</button>
+                    <BsInstagram color='black' fontSize="80px" className='absolute top-[46px] left-[24px]' />
                 </div>
                 <div className='w-[490px] h-[170px] absolute top-[1165px] left-[255px] border border-gray-400'>
                     <div className="flex ml-32 mb-2 mt-5">
@@ -82,8 +82,8 @@ function SellerDetail () {
                         <IoPricetagOutline color='black' fontSize="36px"/>
                         <span className="text-[22px] text-black ml-4">Rp. 700.000</span>
                     </div>
-                    <button className="absolute top-[110px] right-[15px] text-[16px] text-black rounded-2xl border border-primary hover:bg-primary">Pilih Project</button>
-                    <BiLogoTiktok color='' fontSize="96px" className='absolute top-[38px] left-[24px]' />
+                    <button className="absolute top-[110px] right-[15px] text-[16px] text-black rounded-2xl border border-primary bg-white text-primary hover:bg-primary hover:text-white">Pilih Project</button>
+                    <BiLogoTiktok color='black' fontSize="96px" className='absolute top-[38px] left-[24px]' />
                 </div>
             </div>
 
