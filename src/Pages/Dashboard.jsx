@@ -11,8 +11,60 @@ import backgroundThird from '../assets/img/background/bg3.png'
 import backgroundFourth from '../assets/img/background/bg4.png'
 import backgroundFifth from '../assets/img/background/bg5.png'
 import Footer from '../Component/Footer';
+import { LuMapPin, LuStar } from "react-icons/lu";
+import { AiFillStar } from "react-icons/ai";
 
 function Dashboard() {
+    const sellers = [
+        {
+            name: "Juliana Santika",
+            location: "Depok, Jawa Barat",
+            lowerPrice : "350.000",
+            highestPrice : "550.000",
+            rating: "3.9",
+            estTime: 2,
+            queuePerson: 4,
+            igFollower : "10k",
+            tiktokFollower: "10K",
+            photo: "https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8"
+        },
+        {
+            name: "Budi Doremi",
+            location: "Malang, Jawa TImur",
+            lowerPrice : "100.000",
+            highestPrice : "1.000.000",
+            rating: "4.2",
+            estTime: 1,
+            queuePerson: 2,
+            igFollower : "15k",
+            tiktokFollower: "18K",
+            photo: "https://marketplace.canva.com/EAFHfL_zPBk/1/0/1600w/canva-yellow-inspiration-modern-instagram-profile-picture-kpZhUIzCx_w.jpg   "
+        },
+        {
+            name: "Muhammad Billy",
+            location: "Sabang, Bali",
+            lowerPrice : "350.000",
+            highestPrice : "550.000",
+            rating: "2.7",
+            estTime: 3,
+            queuePerson: 12,
+            igFollower : "7k",
+            tiktokFollower: "11K",
+            photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQMup2MDZL19URJdW2rnUQAJu8TLQ6MrpgHpz4qY0XewFMPiUfLknKO8_1_FjwkIGPr0&usqp=CAU"
+        },
+        {
+            name: "Marcell",
+            location: "Malang, Jawa TImur",
+            lowerPrice : "100.000",
+            highestPrice : "1.000.000",
+            rating: "4.1",
+            estTime: 1,
+            queuePerson: 2,
+            igFollower : "14k",
+            tiktokFollower: "17K",
+            photo: "https://cdn140.picsart.com/39063465592866053138.webp?type=webp"
+        },
+    ];
   return (
     <>
     <section className='body-font font-poppins w-screen sm:overflow-x-hidden'>
@@ -69,10 +121,32 @@ function Dashboard() {
                 </div>
             </div>
             <div className='mt-24 grid grid-cols-4'>
+            {sellers.map((seller) => (
+                <div className='flex justify-center'>
+                    <div className='w-60'>
+                        <img src={seller.photo} alt="" />
+                        <div className='mt-6'>
+                            <p className='text-lg font-medium'>{seller.name}</p>
+                            <p className='text-secondary text-lg font-bold'>Rp. {seller.lowerPrice}</p>
+                        </div>
+                        <div className='flex text-gray-500 mt-1'>
+                            <LuMapPin className='mt-1'/>
+                            <p className='ml-2'>{seller.location}</p>
+                        </div>
+                        <div className='flex mt-1'>
+                            <AiFillStar color='gold' fontSize="1.3rem"/>
+                            <AiFillStar color='gold' fontSize="1.3rem"/>
+                            <AiFillStar color='gold' fontSize="1.3rem"/>
+                            <AiFillStar color='gold' fontSize="1.3rem"/>
+                            <AiFillStar color='gold' fontSize="1.3rem"/>
+                        </div>
+                    </div>
+                </div>
+            ))}
+                {/* <Card />
                 <Card />
                 <Card />
-                <Card />
-                <Card />
+                <Card /> */}
             </div>
             <div className='flex justify-center mt-32'>
                 <Link to="/seller">
