@@ -37,7 +37,7 @@ function Footer() {
                                     className="text-white font-normal hover:text-white">FAQ</a>
                             </li>
                             <li>
-                              <a href="#" className="text-white font-normal hover:text-white">Contact Us</a>
+                              <a href="/contact" className="text-white font-normal hover:text-white">Contact Us</a>
                             </li>
                         </ul>
                     </div>
