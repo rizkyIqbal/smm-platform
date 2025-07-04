@@ -1,8 +1,8 @@
 import Navbar from '../Component/NavbarLogged'
 import backgroundTop from '../assets/img/background/order/top.png'
 import backgroundBottom from '../assets/img/background/order/bottom.png'
-import sectionOrder from '../assets/img/sectionOrder.png'
-import sectionInfluencer from '../assets/img/sectionInfluencer.png'
+import sectionOrder from '../assets/img/sectionorder.png'
+import sectionInfluencer from '../assets/img/sectioninfluencer.png'
 import Footer from '../Component/Footer';
 import { Link } from 'react-router-dom'
 
